@@ -47,7 +47,7 @@
 				<pathelement path="lib/findbugs/lib/findbugs.jar" />
 			</classpath>
 		</taskdef>
-		<findbugs home="lib/findbugs" output="xml" outputFile="${report.dir}/findbugs_report.xml">
+		<findbugs home="lib/findbugs" output="xml" outputFile="${report.dir}/findbugs_report.xml" reportLevel="low">
 			<sourcePath path="src" />
 			<class location="build/classes" />
 		</findbugs>

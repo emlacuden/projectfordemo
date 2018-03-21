@@ -44,7 +44,7 @@
 		<mkdir dir="${report.dir}" />
 		<taskdef name="findbugs" classname="edu.umd.cs.findbugs.anttask.FindBugsTask">
 			<classpath>
-				<pathelement path="lib/findbugs/lib/findbugs.jar" />
+				<pathelement path="lib/findbugs/lib/findbugs-ant.jar" />
 			</classpath>
 		</taskdef>
 		<findbugs home="lib/findbugs" output="xml" outputFile="${report.dir}/findbugs_report.xml" reportLevel="low">
